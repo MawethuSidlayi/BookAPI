@@ -7,10 +7,8 @@ namespace BookAPI.Models
 {
     public class User : BaseEntity
     {
-       
         public string EmailAdress { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
     }
 }

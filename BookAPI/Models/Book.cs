@@ -7,9 +7,10 @@ namespace BookAPI.Models
 {
     public class Book: BaseEntity
     {
+
         public string Name { get; set; }
         public string Text { get; set; }
         public string PurchasePrice { get; set; }
-
+        
     }
 }

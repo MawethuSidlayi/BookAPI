@@ -12,8 +12,11 @@ namespace BookAPI.Models
         {
             Database.EnsureCreated();
         }
-        public DbSet<Book> Books { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<Book> Book { get; set; }
+        public DbSet<User> User { get; set; }
+        // public DbSet<Subscription> Subscriptions { get; set; }
+
+
+
     }
 }

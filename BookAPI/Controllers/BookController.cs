@@ -21,10 +21,10 @@ namespace BookAPI.Controllers
         }
         [HttpPost]
         [Route("")]
-        [AllowAnonymous]
         public async Task  AddBook([FromBody] Book book) => await bookRepository.Insert(book);
 
         [HttpGet]
+        [Authorize]
         [Route("")]
         public async Task< IEnumerable<Book>> GetAllBooks() => await bookRepository.GetAll();
 
