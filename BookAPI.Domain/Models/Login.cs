@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookAPI.Models
+namespace BookAPI.Domain.Models
 {
     public class Login
     {
@@ -12,10 +12,8 @@ namespace BookAPI.Models
         [EmailAddress]
         public string Email { get; set; }
         [Required]
-        [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "Remember Me")]
-        public bool RememberMe { get; set; }
+
     }
 }

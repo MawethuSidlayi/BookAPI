@@ -1,11 +1,12 @@
-﻿using BookAPI.Models;
+﻿using BookAPI.Domain.Interfaces;
+using BookAPI.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookAPI.Repositories
+namespace BookAPI
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {

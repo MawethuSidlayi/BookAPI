@@ -1,6 +1,5 @@
-﻿using BookAPI.Models;
-using BookAPI.Repositories;
-using BookAPI.Repositories.BookRepository;
+﻿using BookAPI.Domain.Interfaces;
+using BookAPI.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;

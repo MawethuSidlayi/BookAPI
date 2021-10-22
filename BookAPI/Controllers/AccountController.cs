@@ -1,4 +1,4 @@
-﻿using BookAPI.Models;
+﻿using BookAPI.Domain.Models;
 using BookAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;

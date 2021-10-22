@@ -1,10 +1,10 @@
-﻿using BookAPI.Models;
+﻿using BookAPI.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookAPI.Repositories.BookRepository
+namespace BookAPI.Domain.Interfaces
 {
     public interface IBookRepository: IRepository<Book>
     {

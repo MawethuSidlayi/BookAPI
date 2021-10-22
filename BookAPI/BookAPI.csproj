@@ -22,4 +22,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BookAPI.DataAccess.EntityFramework\BookAPI.DataAccess.EntityFramework.csproj" />
+    <ProjectReference Include="..\BookAPI.Domain\BookAPI.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

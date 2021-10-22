@@ -1,10 +1,8 @@
-﻿using BookAPI.Models;
-using System;
+﻿using BookAPI.Domain.Models;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookAPI.Repositories
+namespace BookAPI.Domain.Interfaces
 {
     public interface IRepository<T> where T: BaseEntity
     {

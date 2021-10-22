@@ -1,10 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BookAPI.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace BookAPI.Models
+
+namespace BookAPI
 {
     public class BookContext: DbContext
     {
