@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace BookAPI.Domain.Models
 {
-    public class Subscription: BaseEntity
+    public class BookSubscriptions: BaseEntity
     {
-        public int UserId { get; set; }
-        public int BookId { get; set; }
+        public Guid User_Id { get; set; }
+        public int Book_Id{ get; set; }
     }
 }

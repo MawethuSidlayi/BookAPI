@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAPI.Domain", "BookAPI.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAPI.DataAccess.EntityFramework", "BookAPI.DataAccess.EntityFramework\BookAPI.DataAccess.EntityFramework.csproj", "{00892865-7D0B-4012-A58D-0FF3E3F1F8BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAPI.Test", "BookAPI.Test\BookAPI.Test.csproj", "{66658F5B-839D-42B8-A960-2784DB865F47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{00892865-7D0B-4012-A58D-0FF3E3F1F8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00892865-7D0B-4012-A58D-0FF3E3F1F8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00892865-7D0B-4012-A58D-0FF3E3F1F8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66658F5B-839D-42B8-A960-2784DB865F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66658F5B-839D-42B8-A960-2784DB865F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66658F5B-839D-42B8-A960-2784DB865F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66658F5B-839D-42B8-A960-2784DB865F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

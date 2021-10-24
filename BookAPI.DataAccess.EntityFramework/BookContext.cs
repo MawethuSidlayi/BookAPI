@@ -12,7 +12,8 @@ namespace BookAPI
         }
         public DbSet<Book> Book { get; set; }
         public DbSet<User> User { get; set; }
-        // public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<BookSubscriptions> BookSubscriptions { get; set; }
+
 
 
 

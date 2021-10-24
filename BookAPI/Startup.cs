@@ -27,9 +27,16 @@ namespace BookAPI
         public void ConfigureServices(IServiceCollection services)
         {
             //TODO: Move to config file 
-
-            services.AddDbContext<BookContext>(options => options.UseSqlite("Data source=books.db"));
-            services.AddDbContext<IdentityDbContext>(options => options.UseSqlite("Data source=books.db"));
+            services.AddCors(options => {
+                options.AddPolicy("EnableCORS", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                    });
+                });
+            services.AddDbContext<BookContext>(options => options.UseSqlite(Configuration["ConnectionStrings:Default"]));
+            services.AddDbContext<IdentityDbContext>(options => options.UseSqlite(Configuration["ConnectionStrings:Default"]));
 
             services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<IdentityDbContext>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -74,6 +81,7 @@ namespace BookAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BookAPI v1"));
             }
+            app.UseCors("EnableCORS");
             app.UseSession();
             app.Use(async (context, next) =>
             {
